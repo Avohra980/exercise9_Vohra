@@ -8,14 +8,20 @@ def sayingHello(name):
     greeting = "Hello " + name
     return greeting
 
+def sayingFarewell(name):
+    '''Simple function that makes a farewell message with a parameter 'name' and retruns the farewell. '''
+    farewell = "Bye " + name
+    return farewell
 
 def main():
     '''The main function where my name will be passed to the 'sayingHello' function and printed with the greeting.'''
     name = "Aziz"
     
     message = sayingHello(name)
+    message2 = sayingFarewell(name)
     
     print(message)
+    print(message2)
 
 '''Calling main'''
 main()
